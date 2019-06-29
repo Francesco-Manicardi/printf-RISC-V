@@ -50,8 +50,6 @@ _start:
 		bne	s1, s2, loop
     
     
-    
-    
     exit:
 
 		# dirigo su stdout
@@ -80,7 +78,8 @@ _start:
 
         #carico in a1 l'address dei byte in ogni caso, poi faccio uno switch case
         la a1, params
-
+        add a1,a1, s3 #salto i parametri già stampati (num di parametri stampati è in s3)
+        
         #una sorta di switch case:
         li t1, 'c'
         bne t0, t1, case_label_1

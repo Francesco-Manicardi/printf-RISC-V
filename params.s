@@ -1,5 +1,5 @@
 
 .section .data
-	format: .string "Byte 1: %c\nByte 2: %c\q"
+	format: .string "Byte 1: %b\nByte 2: %b\q"
     end_line: .string "\n"
-	params: .byte 123, 100
+	params: .byte 0, 121
