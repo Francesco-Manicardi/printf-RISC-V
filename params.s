@@ -1,5 +1,5 @@
 
 .section .data
-	format: .string "%c %c %c %b %b %b\q"
-    end_line: .string "\n"
-	params: .byte 120,121,122,120,121,122
+	format: .string "prova\q terminazione %c %b" #stringa formattatrice
+	params: .byte 45,47 #byte che rappresentano i parametri
+    end_line: .string "\n" #carattere stampato al termine del programma
